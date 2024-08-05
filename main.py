@@ -29,7 +29,6 @@ def main():
 
     for wallet in wallets:
         eligible_amount = round(fetch_drop_amount(wallet, session), 3)
-        print(eligible_amount)
         if eligible_amount <= 0:
             print(f"You are not eligible (0 $ZRC) in {wallet!r} account")
         else:
